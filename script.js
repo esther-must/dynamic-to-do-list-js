@@ -19,6 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Create the addTask function
     function addTask(taskText, save = true) {
+
+        // Trim the input value
+        taskText = taskText.trim();
+        
         // Prevent adding an empty task
         if (!taskText.trim()) {
             alert("Please enter a task.");
