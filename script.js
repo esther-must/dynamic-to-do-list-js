@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function addTask(taskText, save = true) {
         // Trim the input value
-        taskText = taskText.trim(); // Ensure we handle whitespace-only input
+        const taskText = taskInput.value.trim();
         
         // Prevent adding an empty task
-        if (!taskText) {
+        if (taskText === "") {
             alert("Please enter a task.");
             return;
         }
