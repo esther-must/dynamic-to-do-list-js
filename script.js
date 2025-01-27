@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Trim the input value
         taskText = taskText.trim();
-        
+
         // Prevent adding an empty task
         if (!taskText.trim()) {
             alert("Please enter a task.");
@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (save) {
             saveTasks();
         }
+        taskInput.value = "";
     }
 
     // Attach event listener for the Add Task button
